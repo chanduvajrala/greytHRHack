@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.chimeroom.models.ConferenceRoom" table="conference_rooms">
+          <id name="roomID" type="int">
+            <column name="room_id" />
+        </id>
+        <property name="roomName" type="java.lang.String">
+            <column name="room_name" />
+        </property>
+        <property name="roomType" type="java.lang.String">
+            <column name="room_type" />
+        </property>
+        <property name="roomLocation" type="java.lang.String">
+            <column name="room_location" />
+        </property>
+        <property name="roomCapacity" type="int">
+            <column name="room_capacity" />
+        </property>
+        <property name="roomProjector" type="java.lang.String">
+            <column name="room_projector" />
+        </property>
+        <property name="roomWifi" type="java.lang.String">
+            <column name="room_wifi" />
+        </property>
+        <property name="roomEthernet" type="java.lang.String">
+            <column name="room_ethernet" />
+        </property>
+        <property name="roomIntercom" type="java.lang.String">
+            <column name="room_intercom" />
+        </property>
+        <property name="roomTeleconf" type="java.lang.String">
+            <column name="room_teleconf" />
+        </property>
+        <property name="roomVideoconf" type="java.lang.String">
+            <column name="room_videoconf" />
+        </property>
+        <property name="roomWhiteBoard" type="java.lang.String">
+            <column name="room_white_board" />
+        </property>
+    </class>
+</hibernate-mapping>

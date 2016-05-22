@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.chimeroom.models.Meeting" table="meetings">
+       
+        <id name="meetingID" type="int">
+            <column name="meeting_id" />
+        </id>
+         <property name="employeeID" type="int">
+            <column name="employee_id" />
+        </property>
+         <property name="roomID" type="int">
+            <column name="room_id" />
+        </property>      
+        <property name="meetingDesc" type="java.lang.String">
+            <column name="meeting_desc" />
+        </property>
+        <property name="meetingStartDate" type="java.util.Date">
+            <column name="meeting_start_datetime" />
+        </property>
+        <property name="meetingEndDate" type="java.util.Date">
+            <column name="meeting_end_datetime" />
+        </property>
+         <property name="meetingCapacity" type="int">
+            <column name="meeting_capacity" />
+        </property>
+    </class>
+</hibernate-mapping>

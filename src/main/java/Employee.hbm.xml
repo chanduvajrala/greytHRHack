@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.chimeroom.models.Employee" table="employees">
+        <id name="employeeID" type="int">
+            <column name="employee_id" />
+        </id>
+        <property name="employeeName" type="java.lang.String">
+            <column name="employee_name" />
+        </property>
+        <property name="employeePriority" type="int">
+            <column name="employee_priority" />
+        </property>
+        <property name="employeeDesignation" type="java.lang.String">
+            <column name="employee_designation" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
